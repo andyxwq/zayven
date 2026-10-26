@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop — ZAYVEN</title>
+  <meta name="description" content="Shop ZAYVEN mini laptop stand legs and desk essentials. Clean design, practical everyday products.">
+  <meta property="og:title" content="Shop — ZAYVEN">
+  <meta property="og:description" content="Mini laptop stand legs and practical desk essentials with clean design.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zayven.uk/shop.html">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="logo">ZAYVEN</a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="shop.html" class="active">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Shop Hero -->
+  <section class="shop-hero">
+    <div class="container">
+      <p class="hero-tagline">Shop</p>
+      <h1>Everyday essentials</h1>
+      <p>Practical tech accessories designed for clean desks and modern setups.</p>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="products-section">
+    <div class="container">
+      <div class="products-grid" id="productsGrid">
+
+        <!-- Product 1: Silver -->
+        <article class="product-card" data-id="stand-silver" data-name="Mini Laptop Stand Legs — Silver" data-price="7.99">
+          <div class="product-image silver">
+            <div class="product-placeholder">
+              <span class="placeholder-icon">◇</span>
+              <span class="placeholder-label">Silver</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Mini Laptop Stand Legs</h3>
+            <p class="product-variant">Silver</p>
+            <p class="product-desc">Portable aluminium-style legs. Raise your laptop for better posture and airflow. Lightweight, foldable, fits most 11–17" laptops.</p>
+            <div class="product-bottom">
+              <span class="product-price">£7.99</span>
+              <button class="btn btn-primary btn-sm add-to-cart">Add to cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 2: Black -->
+        <article class="product-card" data-id="stand-black" data-name="Mini Laptop Stand Legs — Black" data-price="7.99">
+          <div class="product-image black">
+            <div class="product-placeholder">
+              <span class="placeholder-icon">◇</span>
+              <span class="placeholder-label">Black</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Mini Laptop Stand Legs</h3>
+            <p class="product-variant">Black</p>
+            <p class="product-desc">Portable aluminium-style legs. Raise your laptop for better posture and airflow. Lightweight, foldable, fits most 11–17" laptops.</p>
+            <div class="product-bottom">
+              <span class="product-price">£7.99</span>
+              <button class="btn btn-primary btn-sm add-to-cart">Add to cart</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="shop-note">
+        Free returns within 14 days · Ships from the UK · Payment integration coming soon
+      </p>
+    </div>
+  </section>
+
+  <!-- Cart Drawer -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h2>Your cart</h2>
+      <button class="cart-close" id="cartClose" aria-label="Close cart">×</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <!-- filled by JS -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-row">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">£0.00</span>
+      </div>
+      <div class="cart-row">
+        <span>Shipping (UK)</span>
+        <span id="cartShipping">£2.99</span>
+      </div>
+      <div class="cart-row total">
+        <span>Total</span>
+        <span id="cartTotal">£0.00</span>
+      </div>
+      <button class="btn btn-primary btn-block" id="checkoutBtn" disabled>
+        Checkout — coming soon
+      </button>
+      <p class="cart-note">Payment will be available once Stripe is connected.</p>
+    </div>
+  </aside>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">ZAYVEN</div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="social-links">
+          <li><a href="https://www.instagram.com/zayven.uk" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a></li>
+          <li><a href="https://www.tiktok.com/@zayven.uk" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.1 15.3a6.34 6.34 0 0010.98-4.33V8.33a8.2 8.2 0 004.76 1.52V6.4a4.85 4.85 0 01-1.25.29z"/></svg></a></li>
+          <li><a href="https://www.facebook.com/share/1CYm52KBbQ/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a></li>
+          <li><a href="https://youtube.com/@zayvenuk" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.169a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.488A3.017 3.017 0 00.502 6.17C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.489 9.376.489 9.376.489s7.505 0 9.377-.489a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.831zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a></li>
+          <li><a href="https://x.com/ZayvenUK" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 ZAYVEN. All rights reserved. · United Kingdom
+      </div>
+    </div>
+  </footer>
+
+  <script src="cart.js"></script>
+  <script>
+    // Mobile menu
+    const toggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    if (toggle && navLinks) {
+      toggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+    }
+  </script>
+</body>
+</html>
