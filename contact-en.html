@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — ZAYVEN</title>
+  <meta name="description" content="Get in touch with ZAYVEN.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="index-en.html" class="logo">ZAYVEN</a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index-en.html">Home</a></li>
+          <li><a href="about-en.html">About</a></li>
+          <li><a href="shop-en.html">Shop</a></li>
+          <li><a href="contact-en.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="contact.html" class="lang-btn">RO</a>
+        <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h1>Contact</h1>
+        <p>Questions or feedback? Reach out.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Email</h3>
+          <p>hello@zayven.uk</p>
+        </div>
+        <form class="contact-form">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="Your email" required>
+          <textarea name="message" placeholder="Your message" required></textarea>
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="footer-bottom">&copy; 2026 ZAYVEN. All rights reserved.</div>
+    </div>
+  </footer>
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    if (toggle && navLinks) toggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+  </script>
+</body>
+</html>
