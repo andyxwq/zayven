@@ -1,6 +1,4 @@
 /* ZAYVEN Brand Styles — Dark Theme */
-/* Colors: Graphite #24272C | Silver White #F3F4F5 | Steel Blue #A9B7C8 | Pure White #FFFFFF */
-
 :root {
   --graphite: #24272C;
   --graphite-dark: #1a1c20;
@@ -52,7 +50,6 @@ body {
   gap: 10px;
 }
 
-/* rest of styles kept minimal for this update — full styles remain in previous version if needed */
 header {
   position: sticky;
   top: 0;
@@ -169,11 +166,37 @@ header {
 }
 @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
 .coming-soon { text-align: center; padding: 100px 0; }
+
+/* Footer */
 footer {
   background: var(--graphite-dark);
   padding: 50px 0 30px;
   border-top: 1px solid var(--border);
 }
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+.footer-logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--pure-white);
+}
+.footer-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+.footer-links a {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+.footer-links a:hover { color: var(--steel-blue); }
 .footer-bottom {
   margin-top: 40px;
   padding-top: 24px;
@@ -181,4 +204,43 @@ footer {
   text-align: center;
   font-size: 0.85rem;
   color: #6B7280;
+}
+
+/* Social links — FIXED SIZE */
+.social-links {
+  display: flex;
+  gap: 18px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+.social-links a {
+  color: var(--steel-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+.social-links a:hover {
+  color: var(--pure-white);
+  background: rgba(255,255,255,0.08);
+}
+.social-links svg {
+  width: 18px !important;
+  height: 18px !important;
+  fill: currentColor;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-links { justify-content: center; }
+  .social-links { justify-content: center; }
 }
