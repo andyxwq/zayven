@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact — ZAYVEN</title>
-  <meta name="description" content="Get in touch with ZAYVEN. Questions, feedback or collaboration — we'd love to hear from you.">
+  <meta name="description" content="Contactează ZAYVEN. Întrebări, feedback sau colaborare — scrie-ne.">
   <meta property="og:title" content="Contact — ZAYVEN">
-  <meta property="og:description" content="Get in touch with ZAYVEN. Questions, feedback or collaboration.">
+  <meta property="og:description" content="Contactează ZAYVEN.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://zayven.uk/contact.html">
   <meta name="twitter:card" content="summary">
@@ -23,17 +23,20 @@
       <a href="index.html" class="logo">ZAYVEN</a>
       <nav>
         <ul class="nav-links" id="navLinks">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="shop.html">Shop</a></li>
+          <li><a href="index.html">Acasă</a></li>
+          <li><a href="about.html">Despre</a></li>
+          <li><a href="shop.html">Produse</a></li>
           <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
       </nav>
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="nav-actions">
+        <a href="contact-en.html" class="lang-btn" title="English">EN</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Meniu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -41,21 +44,21 @@
     <div class="container">
       <div class="section-header">
         <h1>Contact</h1>
-        <p>Questions, feedback or just want to say hello? Reach out.</p>
+        <p>Întrebări, feedback sau vrei să ne saluți? Scrie-ne.</p>
       </div>
 
       <div class="contact-grid">
         <div class="contact-info">
           <h3>Email</h3>
           <p>hello@zayven.uk</p>
-          <h3>Social</h3>
-          <p>Find us on Instagram, TikTok, Facebook, YouTube and X as @ZayvenUK / zayven.uk</p>
+          <h3>Social media</h3>
+          <p>Ne găsești pe Instagram, TikTok, Facebook, YouTube și X ca @ZayvenUK</p>
         </div>
         <form class="contact-form">
-          <input type="text" name="name" placeholder="Your name" required>
-          <input type="email" name="email" placeholder="Your email" required>
-          <textarea name="message" placeholder="Your message" required></textarea>
-          <button type="submit" class="btn btn-primary">Send message</button>
+          <input type="text" name="name" placeholder="Numele tău" required>
+          <input type="email" name="email" placeholder="Emailul tău" required>
+          <textarea name="message" placeholder="Mesajul tău" required></textarea>
+          <button type="submit" class="btn btn-primary">Trimite mesajul</button>
         </form>
       </div>
     </div>
@@ -66,9 +69,9 @@
       <div class="footer-content">
         <div class="footer-logo">ZAYVEN</div>
         <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="shop.html">Shop</a></li>
+          <li><a href="index.html">Acasă</a></li>
+          <li><a href="about.html">Despre</a></li>
+          <li><a href="shop.html">Produse</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <ul class="social-links">
@@ -80,7 +83,7 @@
         </ul>
       </div>
       <div class="footer-bottom">
-        &copy; 2026 ZAYVEN. All rights reserved. · United Kingdom
+        &copy; 2026 ZAYVEN. Toate drepturile rezervate.
       </div>
     </div>
   </footer>
@@ -98,7 +101,7 @@
     if (form) {
       form.addEventListener('submit', function(e) {
         e.preventDefault();
-        alert('Thank you for your message. This is a demo form — please email us directly at hello@zayven.uk for now.');
+        alert('Mulțumim pentru mesaj. Acesta este un formular demo — te rugăm să ne scrii direct la hello@zayven.uk.');
       });
     }
   </script>
